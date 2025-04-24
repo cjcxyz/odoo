@@ -1,6 +1,6 @@
 web: python3 odoo/odoo-bin \
   --http-port=${PORT} \
-  --http-interface=0.0.0.0 \
+  --http-interface=:: \
   --db_host=${PGHOST} --db_port=${PGPORT} \
   --db_user=${PGUSER} --db_password=${PGPASSWORD} \
   --db_name=${PGDATABASE} \
