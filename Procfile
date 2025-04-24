@@ -1,1 +1,1 @@
-web: python3 -m odoo server --http-port=${PORT} --http-interface=0.0.0.0 --db_host=${PGHOST} --db_port=${PGPORT} --db_user=${DB_USER} --db_password=${DB_PASSWORD} --database=${PGDATABASE} --addons-path=addons,odoo/addons
+web: python3 -m odoo server --database=${PGDATABASE} --init=base --http-port=${PORT} --http-interface=0.0.0.0 --db_host=${PGHOST} --db_port=${PGPORT} --db_user=${DB_USER} --db_password=${DB_PASSWORD} --addons-path=addons,odoo/addons
